@@ -50,11 +50,13 @@ export const useStudioStore = create<StudioState>()(
       closeNavMenu: () => set({ isNavMenuOpen: false }),
     }),
     {
-      name: 'free-web-builder-storage',
+      name: 'free-web-builder-v2',
       partialize: (state) => ({
         locale: state.locale,
         theme: state.theme,
         customizationMode: state.customizationMode,
+        primaryColor: state.primaryColor,
+        previewDevice: state.previewDevice,
       }),
     }
   )
