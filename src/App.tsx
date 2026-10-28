@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import Navbar from '@/components/Navbar';
+import NavbarSimple from '@/components/NavbarSimple';
 import Footer from '@/components/Footer';
 import QRModal from '@/components/QRModal';
 import Hero from '@/components/Hero';
@@ -14,7 +14,7 @@ import ExportModal from '@/components/studio/ExportModal';
 export default function App() {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/30 flex flex-col">
-      <Navbar />
+      <NavbarSimple />
       <main className="flex-1">
         <Suspense fallback={<div className="flex items-center justify-center h-screen text-muted-foreground">Memuat Free Web Builder...</div>}>
           <Hero />
