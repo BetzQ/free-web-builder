@@ -1,8 +1,10 @@
 import { ArrowRight, Code2, Database, ShieldCheck, Zap } from 'lucide-react';
+import { useTranslation } from '@/i18n';
 import { useStudioStore } from '@/store/useStudioStore';
 
 export default function Hero() {
   const { openQRModal } = useStudioStore();
+  const { t } = useTranslation();
   
   return (
     <section className="relative overflow-hidden section">
