@@ -9,7 +9,11 @@
       "secondaryColor": "#635bff",
       "accentColor": "#00d084",
       "bgType": "gradient-radial",
-      "fontPair": { "heading": "Space Grotesk", "body": "Inter", "mono": "JetBrains Mono" },
+      "fontPair": {
+        "heading": "Space Grotesk",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
       "borderRadius": "sharp",
       "shadowStyle": "hard-brutalist",
       "glassmorphism": false,
@@ -25,7 +29,11 @@
       "secondaryColor": "#171717",
       "accentColor": "#c0c0c0",
       "bgType": "solid-dark",
-      "fontPair": { "heading": "Inter", "body": "Inter", "mono": "JetBrains Mono" },
+      "fontPair": {
+        "heading": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
       "borderRadius": "rounded-2xl",
       "shadowStyle": "soft-glow",
       "glassmorphism": false,
@@ -41,7 +49,11 @@
       "secondaryColor": "#00f0ff",
       "accentColor": "#f0f0f0",
       "bgType": "mesh-gradient",
-      "fontPair": { "heading": "Orbitron", "body": "Chakra Petch", "mono": "JetBrains Mono" },
+      "fontPair": {
+        "heading": "Orbitron",
+        "body": "Chakra Petch",
+        "mono": "JetBrains Mono"
+      },
       "borderRadius": "sharp",
       "shadowStyle": "neon-glow",
       "glassmorphism": true,
@@ -57,7 +69,11 @@
       "secondaryColor": "#fff7ed",
       "accentColor": "#fb923c",
       "bgType": "gradient-radial",
-      "fontPair": { "heading": "Playfair Display", "body": "Plus Jakarta Sans", "mono": "JetBrains Mono" },
+      "fontPair": {
+        "heading": "Playfair Display",
+        "body": "Plus Jakarta Sans",
+        "mono": "JetBrains Mono"
+      },
       "borderRadius": "rounded-3xl",
       "shadowStyle": "soft-glow",
       "glassmorphism": false,
@@ -73,7 +89,11 @@
       "secondaryColor": "#64748b",
       "accentColor": "#0ea5e9",
       "bgType": "solid-corporate",
-      "fontPair": { "heading": "IBM Plex Sans", "body": "IBM Plex Sans", "mono": "IBM Plex Mono" },
+      "fontPair": {
+        "heading": "IBM Plex Sans",
+        "body": "IBM Plex Sans",
+        "mono": "IBM Plex Mono"
+      },
       "borderRadius": "rounded-lg",
       "shadowStyle": "hard-brutalist",
       "glassmorphism": false,
@@ -89,7 +109,11 @@
       "secondaryColor": "#c084fc",
       "accentColor": "#fcd34d",
       "bgType": "gradient-radial",
-      "fontPair": { "heading": "Space Grotesk", "body": "Inter", "mono": "JetBrains Mono" },
+      "fontPair": {
+        "heading": "Space Grotesk",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
       "borderRadius": "rounded-3xl",
       "shadowStyle": "soft-glow",
       "glassmorphism": true,
@@ -105,12 +129,156 @@
       "secondaryColor": "#000000",
       "accentColor": "#ef4444",
       "bgType": "solid-brutalist",
-      "fontPair": { "heading": "Orbitron", "body": "Chakra Petch", "mono": "JetBrains Mono" },
+      "fontPair": {
+        "heading": "Orbitron",
+        "body": "Chakra Petch",
+        "mono": "JetBrains Mono"
+      },
       "borderRadius": "sharp",
       "shadowStyle": "hard-brutalist",
       "glassmorphism": false,
       "noise": true,
       "copymode": "full"
+    },
+    {
+      "id": "saas-ai-platform",
+      "name": "SaaS AI Platform",
+      "category": "SaaS / AI",
+      "description": "Warna ungu biru, bentuk modern, tipografi AI-focused, layout dashboard.",
+      "primaryColor": "#8b5cf6",
+      "secondaryColor": "#c084fc",
+      "accentColor": "#a78bfa",
+      "bgType": "gradient-radial",
+      "fontPair": {
+        "heading": "Space Grotesk",
+        "body": "Plus Jakarta Sans",
+        "mono": "JetBrains Mono"
+      },
+      "borderRadius": "rounded-2xl",
+      "shadowStyle": "soft-glow",
+      "glassmorphism": true,
+      "noise": false,
+      "copymode": "semi"
+    },
+    {
+      "id": "umkm-kuliner",
+      "name": "UMKM Kuliner Modern",
+      "category": "UMKM / Kuliner",
+      "description": "Warna hangat oranye-krem, foto makanan menonjol, bentuk lembut.",
+      "primaryColor": "#fb923c",
+      "secondaryColor": "#fff7ed",
+      "accentColor": "#f97316",
+      "bgType": "solid-warm",
+      "fontPair": {
+        "heading": "Playfair Display",
+        "body": "Plus Jakarta Sans",
+        "mono": "JetBrains Mono"
+      },
+      "borderRadius": "rounded-3xl",
+      "shadowStyle": "soft-glow",
+      "glassmorphism": false,
+      "noise": true,
+      "copymode": "semi"
+    },
+    {
+      "id": "corporate-bank",
+      "name": "Corporate Enterprise Bank",
+      "category": "Bank / Korporasi",
+      "description": "Navy profesional, abu-abu, bentuk rapi, tipografi klasik.",
+      "primaryColor": "#1e3a8a",
+      "secondaryColor": "#64748b",
+      "accentColor": "#0ea5e9",
+      "bgType": "solid-corporate",
+      "fontPair": {
+        "heading": "IBM Plex Sans",
+        "body": "IBM Plex Sans",
+        "mono": "IBM Plex Mono"
+      },
+      "borderRadius": "rounded-lg",
+      "shadowStyle": "hard-brutalist",
+      "glassmorphism": false,
+      "noise": false,
+      "copymode": "default"
+    },
+    {
+      "id": "editorial-luxury",
+      "name": "Editorial Luxury",
+      "category": "Editorial / Luxury",
+      "description": "Hitam emas, tipografi editorial, layout majalah.",
+      "primaryColor": "#bfa15f",
+      "secondaryColor": "#0a0a0a",
+      "accentColor": "#f0e6c8",
+      "bgType": "solid-dark",
+      "fontPair": {
+        "heading": "Playfair Display",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "borderRadius": "sharp",
+      "shadowStyle": "hard-brutalist",
+      "glassmorphism": false,
+      "noise": true,
+      "copymode": "full"
+    },
+    {
+      "id": "dev-doc-hub",
+      "name": "Developer Documentation Hub (Mintlify)",
+      "category": "Developer / Docs",
+      "description": "Warna hijau-teal, layout dokumentasi bersih, monospaced dominan.",
+      "primaryColor": "#14b8a6",
+      "secondaryColor": "#134e4a",
+      "accentColor": "#2dd4bf",
+      "bgType": "solid-dark",
+      "fontPair": {
+        "heading": "Space Grotesk",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "borderRadius": "rounded-xl",
+      "shadowStyle": "soft-glow",
+      "glassmorphism": true,
+      "noise": false,
+      "copymode": "semi"
+    },
+    {
+      "id": "ecommerce-fashion",
+      "name": "E-Commerce Fashion",
+      "category": "Fashion / Retail",
+      "description": "Warna pastel pink-cream, foto produk besar, bentuk asimetris.",
+      "primaryColor": "#f472b6",
+      "secondaryColor": "#ffedd5",
+      "accentColor": "#ec4899",
+      "bgType": "gradient-radial",
+      "fontPair": {
+        "heading": "Playfair Display",
+        "body": "Plus Jakarta Sans",
+        "mono": "JetBrains Mono"
+      },
+      "borderRadius": "rounded-2xl",
+      "shadowStyle": "soft-glow",
+      "glassmorphism": true,
+      "noise": false,
+      "copymode": "semi"
+    },
+    {
+      "id": "health-tech",
+      "name": "Health-Tech Dashboard",
+      "category": "Healthcare / Dashboard",
+      "description": "Warna hijau medis, bentuk bersih, data visual dominan.",
+      "primaryColor": "#10b981",
+      "secondaryColor": "#ecfdf5",
+      "accentColor": "#059669",
+      "bgType": "gradient-radial",
+      "fontPair": {
+        "heading": "Inter",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "borderRadius": "rounded-2xl",
+      "shadowStyle": "soft-glow",
+      "glassmorphism": false,
+      "noise": true,
+      "copymode": "default"
     }
   ]
 }
