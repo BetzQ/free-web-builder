@@ -1,3 +1,4 @@
+import ErrorBoundary from '@/components/ErrorBoundary';
 import { Suspense } from 'react';
 import NavbarSimple from '@/components/NavbarSimple';
 import Footer from '@/components/Footer';
@@ -14,7 +15,8 @@ import ExportModal from '@/components/studio/ExportModal';
 export default function App() {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/30 flex flex-col">
-      <NavbarSimple />
+      <ErrorBoundary>
+        <ErrorBoundary><NavbarSimple /></ErrorBoundary>
       <main className="flex-1">
         <Suspense fallback={<div className="flex items-center justify-center h-screen text-muted-foreground">Memuat Free Web Builder...</div>}>
           <Hero />
@@ -87,6 +89,7 @@ export default function App() {
       </main>
       <Footer />
       <QRModal />
+    </ErrorBoundary>
     </div>
   );
 }
