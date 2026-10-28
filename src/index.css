@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 199 89% 48%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 199 89% 48%;
+  }
+  * { border-color: hsl(var(--border)); }
+  body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); font-feature-settings: "rlig" 1, "calt" 1; }
+  html { scroll-behavior: smooth; }
+  [dir="rtl"] { direction: rtl; }
+  ::selection { background: hsl(var(--primary) / 0.3); color: hsl(var(--primary-foreground)); }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none; }
+  .btn-primary { @apply btn; background-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+  .btn-secondary { @apply btn; background-color: hsl(var(--secondary)); color: hsl(var(--secondary-foreground)); }
+  .btn-outline { @apply btn border; background-color: hsl(var(--card)); color: hsl(var(--foreground)); }
+  .btn-ghost { @apply btn hover:bg-accent hover:text-accent-foreground; }
+  .btn-destructive { @apply btn bg-destructive text-destructive-foreground; }
+  .btn-saweria { @apply btn bg-[#d47a2e] text-white hover:bg-[#c05f1f]; }
+  .input { @apply flex h-10 w-full rounded-lg border px-3 py-2 text-sm; background-color: hsl(var(--background)); }
+  .card { border-radius: 0.75rem; border-width: 1px; border-color: hsl(var(--border)); background-color: hsl(var(--card)); color: hsl(var(--card-foreground)); box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); }
+  .card-hover { @apply card transition-all duration-300 hover:shadow-lg hover:-translate-y-1; }
+  .badge { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold; }
+  .badge-primary { @apply badge bg-primary/10 text-primary; }
+  .badge-saweria { @apply badge bg-[#d47a2e]/10 text-[#c05f1c]; }
+  .container-main { @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-16 sm:py-24 lg:py-32; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .glass { @apply bg-white/10 backdrop-blur-md border border-white/20; }
+  .glass-dark { @apply bg-black/10 backdrop-blur-md border border-white/10; }
+  .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, hsl(var(--primary)), #d47a2e); }
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: hsl(var(--muted)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--muted-foreground) / 0.3); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground) / 0.5); }

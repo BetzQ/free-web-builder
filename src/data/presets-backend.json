@@ -1,0 +1,54 @@
+{
+  "presets": [
+    {
+      "id": "monolith-default",
+      "name": "Monolith Default",
+      "category": "Startup / Small Team",
+      "description": "Struktur folder sederhana: controllers, services, models, middleware dalam satu repo.",
+      "language": "node",
+      "framework": "express",
+      "auth": { "jwt": true, "oauth": ["google", "github"], "2fa": false, "passkeys": false },
+      "security": { "rateLimit": true, "cors": true, "csrf": true, "csp": true, "inputSanitization": true, "passwordHash": "bcrypt", "auditLog": false },
+      "architecture": "monolith",
+      "docker": true
+    },
+    {
+      "id": "modular-monolith",
+      "name": "Modular Monolith",
+      "category": "Mid-Size / Growing Team",
+      "description": "Modul terpisah per domain (users, products, orders) dalam satu deployable.",
+      "language": "node",
+      "framework": "nest",
+      "auth": { "jwt": true, "oauth": ["google"], "2fa": true, "passkeys": false },
+      "security": { "rateLimit": true, "cors": true, "csrf": true, "csp": true, "inputSanitization": true, "passwordHash": "argon2id", "auditLog": true },
+      "architecture": "modular-monolith",
+      "docker": true
+    },
+    {
+      "id": "microservices-clean",
+      "name": "Microservices Clean Hexagonal",
+      "category": "Enterprise / Large Scale",
+      "description": "Arsitektur Clean/Hexagonal dengan domain, application, interfaces, infrastructure terpisah.",
+      "language": "python",
+      "framework": "fastapi",
+      "auth": { "jwt": true, "oauth": ["google", "github", "microsoft"], "2fa": true, "passkeys": true },
+      "security": { "rateLimit": true, "cors": true, "csrf": true, "csp": true, "inputSanitization": true, "passwordHash": "argon2id", "auditLog": true },
+      "architecture": "clean-hexagonal",
+      "docker": true,
+      "openapi": true,
+      "webhookHmac": true
+    },
+    {
+      "id": "serverless-edge",
+      "name": "Serverless Edge (Vercel / Cloudflare)",
+      "category": "Modern / Low Cost",
+      "description": "Fungsi serverless dengan cold-start cepat, stateless, edge deployment.",
+      "language": "typescript",
+      "framework": "hono",
+      "auth": { "jwt": true, "oauth": ["google"], "2fa": false, "passkeys": false },
+      "security": { "rateLimit": true, "cors": true, "csrf": false, "csp": true, "inputSanitization": true, "passwordHash": "bcrypt", "auditLog": false },
+      "architecture": "serverless-edge",
+      "docker": false
+    }
+  ]
+}

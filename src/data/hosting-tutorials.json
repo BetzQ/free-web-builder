@@ -1,0 +1,20 @@
+{
+  "frontend": [
+    { "title": "Vercel (Gratis & Berbayar)", "badge": "🏷️ 100% GRATIS / BERBAYAR", "time": "⏱️ 2 Menit", "steps": ["Buka vercel.com → Login dengan GitHub", "Import repo dari GitHub / Drag file .zip", "Klik Deploy → Seluruh proses otomatis"], "command": "git push origin main # Lalu buka Vercel dan import repo", "link": "https://vercel.com" },
+    { "title": "Netlify (Gratis)", "badge": "🏷️ 100% GRATIS", "time": "⏱️ 2 Menit", "steps": ["Buka netlify.com → Login", "Drag folder build/ ke Netlify Drop", "Dapatkan URL langsung"], "command": "# Tidak perlu perintah terminal — cukup drag & drop folder dist/", "link": "https://netlify.com" },
+    { "title": "Cloudflare Pages (Gratis)", "badge": "🏷️ 100% GRATIS", "time": "⏱️ 3 Menit", "steps": ["Buka pages.cloudflare.com", "Hubungkan repo GitHub atau upload .zip", "Deploy otomatis dengan CDN global"], "command": "# Upload folder dist/ ke dashboard Cloudflare Pages", "link": "https://pages.cloudflare.com" },
+    { "title": "GitHub Pages (Gratis)", "badge": "🏷️ 100% GRATIS", "time": "⏱️ 3 Menit", "steps": ["Repositori → Settings → Pages", "Pilih branch main / folder /docs atau /", "Simpan dan tunggu URL aktif"], "command": "git checkout -b gh-pages && git push origin gh-pages", "link": "https://github.com" }
+  ],
+  "backend": [
+    { "title": "Koyeb (Gratis Tanpa Kartu Kredit)", "badge": "🏷️ 100% GRATIS / FREEMIUM", "time": "⏱️ 5 Menit", "steps": ["Buka koyeb.com → Login", "Buat App baru → Pilih Dockerfile atau GitHub", "Deploy otomatis dengan URL gratis"], "command": "# Tidak perlu perintah — dashboard Koyeb menangani semua", "link": "https://koyeb.com" },
+    { "title": "Render.com (Gratis)", "badge": "🏷️ 100% GRATIS / FREEMIUM", "time": "⏱️ 5 Menit", "steps": ["Buka render.com → Login", "New Web Service → Pilih repo", "Pilih runtime Node / Python / Go / Rust"], "command": "# Render otomatis build dari repo GitHub", "link": "https://render.com" },
+    { "title": "Railway.app (Freemium)", "badge": "🏷️ FREEMIUM / MURAH", "time": "⏱️ 4 Menit", "steps": ["Buka railway.app → Login", "New Project → Connect GitHub", "Deploy dengan 1 klik"], "command": "# Railway otomatis detect framework dari package.json", "link": "https://railway.app" },
+    { "title": "VPS Linux Ubuntu (Berbayar)", "badge": "🏷️ BERBAYAR / PRO", "time": "⏱️ 10 Menit", "steps": ["Beli VPS (DigitalOcean / Vultr / Linode)", "SSH ke server → Install Docker / Docker Compose", "Upload kode dan jalankan docker-compose up -d"], "command": "docker-compose up -d # Setelah upload file docker-compose.yml", "link": "https://digitalocean.com" }
+  ],
+  "database": [
+    { "title": "Supabase (Gratis Cloud DB)", "badge": "🏷️ 100% GRATIS", "time": "⏱️ 3 Menit", "steps": ["Buka supabase.com → Buat Project Baru", "Buka SQL Editor → Paste isi database_full.sql", "Klik Run → Seluruh tabel langsung jadi!"], "command": "# Salin isi file database_full.sql lalu paste ke SQL Editor Supabase lalu klik Run", "link": "https://supabase.com" },
+    { "title": "Neon.tech (Serverless Postgres)", "badge": "🏷️ 100% GRATIS", "time": "⏱️ 3 Menit", "steps": ["Buka neon.tech → Buat Project", "Buka SQL Editor → Import .sql", "Jalankan SQL → Database siap pakai"], "command": "# Import file database_full.sql ke SQL Editor Neon", "link": "https://neon.tech" },
+    { "title": "phpMyAdmin / cPanel (Berbayar / Lokal)", "badge": "🏷️ BERBAYAR / LOKAL", "time": "⏱️ 5 Menit", "steps": ["Login cPanel / Buka phpMyAdmin / XAMPP / Laragon", "Buat Database Baru → Klik tab Import", "Pilih file database_full.sql → Klik Go → Langsung jadi!"], "command": "# Tidak perlu terminal — cukup klik Import di phpMyAdmin", "link": "https://supabase.com" },
+    { "title": "Aiven (Gratis MySQL / Postgres)", "badge": "🏷️ 100% GRATIS / FREEMIUM", "time": "⏱️ 4 Menit", "steps": ["Buka aiven.io → Buat Service Database", "Buka SQL Editor → Paste .sql", "Jalankan → Database siap untuk aplikasi"], "command": "# Salin isi .sql ke editor SQL Aiven lalu jalankan", "link": "https://aiven.io" }
+  ]
+}

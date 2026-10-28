@@ -1,0 +1,26 @@
+{
+  "tools": [
+    { "name": "React", "category": "Frontend", "version": "18.3", "status": "stable" },
+    { "name": "Next.js", "category": "Frontend", "version": "15", "status": "stable" },
+    { "name": "Vite", "category": "Frontend", "version": "6", "status": "stable" },
+    { "name": "Vue 3", "category": "Frontend", "version": "3.5", "status": "stable" },
+    { "name": "Nuxt", "category": "Frontend", "version": "3.14", "status": "stable" },
+    { "name": "SvelteKit", "category": "Frontend", "version": "2.8", "status": "stable" },
+    { "name": "Tailwind CSS", "category": "Frontend", "version": "4.0", "status": "stable" },
+    { "name": "Node.js", "category": "Backend", "version": "22", "status": "stable" },
+    { "name": "Express", "category": "Backend", "version": "4.21", "status": "stable" },
+    { "name": "NestJS", "category": "Backend", "version": "10.4", "status": "stable" },
+    { "name": "Fastify", "category": "Backend", "version": "5", "status": "stable" },
+    { "name": "Hono", "category": "Backend", "version": "4.6", "status": "stable" },
+    { "name": "Python / FastAPI", "category": "Backend", "version": "0.115", "status": "stable" },
+    { "name": "PostgreSQL", "category": "Database", "version": "17", "status": "stable" },
+    { "name": "MySQL / MariaDB", "category": "Database", "version": "8.4", "status": "stable" },
+    { "name": "SQLite", "category": "Database", "version": "3.46", "status": "stable" },
+    { "name": "Supabase", "category": "Database", "version": "2", "status": "stable" },
+    { "name": "Prisma", "category": "Database", "version": "6", "status": "stable" },
+    { "name": "Drizzle", "category": "Database", "version": "0.32", "status": "stable" },
+    { "name": "OpenAI / GPT-4", "category": "AI", "version": "4o", "status": "stable" },
+    { "name": "Claude 3.5 Sonnet", "category": "AI", "version": "3.5", "status": "stable" },
+    { "name": "Gemini 1.5", "category": "AI", "version": "1.5", "status": "stable" }
+  ]
+}

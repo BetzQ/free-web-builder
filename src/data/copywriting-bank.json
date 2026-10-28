@@ -1,0 +1,27 @@
+{
+  "bank": [
+    { "key": "default", "text": "Web ini berfungsi dengan baik — desain bersih, navigasi jelas, dan konten profesional." },
+    { "key": "semi", "text": "Temukan [Nama Web] — fokus pada [Fokus Produk]. Desain modern untuk pengguna modern." },
+    { "key": "full", "text": "Selamat datang di [Nama Web]. Kami menyajikan [Fokus Produk] dengan desain yang memukau dan pengalaman yang mulus." }
+  ],
+  "hero": [
+    { "key": "default", "text": "Bangun Web Tanpa Batas" },
+    { "key": "semi", "text": "Bangun [Nama Web] — [Fokus Produk] Untuk Semua" },
+    { "key": "full", "text": "Imaginasi Anda Menjadi Nyata: [Nama Web]" }
+  ],
+  "ctaButton": [
+    { "key": "default", "text": "Mulai Membangun" },
+    { "key": "semi", "text": "Buat [Nama Web] Sekarang" },
+    { "key": "full", "text": "Wujudkan Impian [Fokus Produk]" }
+  ],
+  "subheadline": [
+    { "key": "default", "text": "Frontend, Backend, Database, dan Deploy — semua dalam satu studio." },
+    { "key": "semi", "text": "[Nama Web] menggabungkan [Fokus Produk] dengan teknologi terkini." },
+    { "key": "full", "text": "Setiap bagian dari [Nama Web] dirancang untuk [Fokus Produk] yang berarti." }
+  ],
+  "badges": [
+    { "key": "default", "label": "Open Source" },
+    { "key": "semi", "label": "Gratis Selamanya" },
+    { "key": "full", "label": "Dibuat Dengan Cinta" }
+  ]
+}

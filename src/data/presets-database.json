@@ -1,0 +1,88 @@
+{
+  "presets": [
+    {
+      "id": "ecommerce-full",
+      "name": "E-Commerce Lengkap",
+      "category": "Retail / Marketplace",
+      "tables": [
+        "users", "roles", "categories", "products", "product_variants", "inventories", "carts", "orders", "order_items", "payments", "shipments", "reviews", "vouchers"
+      ],
+      "dialect": "postgresql",
+      "rls": true,
+      "triggerUpdatedAt": true,
+      "softDelete": true,
+      "auditTrail": true,
+      "seedData": true
+    },
+    {
+      "id": "saas-subscription",
+      "name": "SaaS Multi-Tenant",
+      "category": "B2B / Software",
+      "tables": [
+        "organizations", "workspaces", "memberships", "users", "subscription_plans", "invoices", "api_keys", "webhooks", "usage_logs"
+      ],
+      "dialect": "postgresql",
+      "rls": true,
+      "triggerUpdatedAt": true,
+      "softDelete": true,
+      "auditTrail": true,
+      "seedData": true
+    },
+    {
+      "id": "inventory-erp",
+      "name": "Inventory & Sparepart (ERP)",
+      "category": "Manufacturing / Factory",
+      "tables": [
+        "warehouses", "locations", "items_spareparts", "categories", "units", "min_max_stock_rules", "bill_of_quantities_boq", "stock_movements", "purchase_requests", "suppliers", "maintenance_work_orders"
+      ],
+      "dialect": "mysql",
+      "rls": false,
+      "triggerUpdatedAt": true,
+      "softDelete": true,
+      "auditTrail": false,
+      "seedData": false
+    },
+    {
+      "id": "hospital-simrs",
+      "name": "Rumah Sakit / SIMRS",
+      "category": "Healthcare",
+      "tables": [
+        "patients", "doctors", "polyclinics", "appointments", "medical_records", "prescriptions", "pharmacy_stocks", "billing"
+      ],
+      "dialect": "postgresql",
+      "rls": true,
+      "triggerUpdatedAt": true,
+      "softDelete": true,
+      "auditTrail": true,
+      "seedData": true
+    },
+    {
+      "id": "academic-lms",
+      "name": "Akademik / LMS",
+      "category": "Education / School",
+      "tables": [
+        "students", "instructors", "courses", "modules", "lessons", "enrollments", "assignments", "submissions", "grades", "certificates"
+      ],
+      "dialect": "sqlite",
+      "rls": false,
+      "triggerUpdatedAt": true,
+      "softDelete": false,
+      "auditTrail": false,
+      "seedData": true
+    },
+    {
+      "id": "social-media-cms",
+      "name": "Social Media / CMS",
+      "category": "Content / Blog / Portal",
+      "tables": [
+        "profiles", "posts", "tags", "comments", "likes", "follows", "notifications", "media_assets", "bookmarks"
+      ],
+      "dialect": "postgresql",
+      "rls": true,
+      "triggerUpdatedAt": true,
+      "softDelete": true,
+      "auditTrail": true,
+      "seedData": false
+    }
+  ]
+}
