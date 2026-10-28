@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { useStudioStore } from '@/store/useStudioStore';
 import { LANGUAGES } from '@/types';
+import { useTranslation } from '@/i18n';
 import { Coffee, Globe, Menu, X, ChevronDown, Sun, Moon } from 'lucide-react';
 
 export default function Navbar() {
   const { locale, theme, setLocale, setTheme, openQRModal, isNavMenuOpen, toggleNavMenu, closeNavMenu } = useStudioStore();
+  const { t } = useTranslation();
   const [langOpen, setLangOpen] = useState(false);
   
   const currentLang = LANGUAGES.find((l) => l.code === locale) || LANGUAGES[0];

@@ -11,12 +11,15 @@ export interface StudioState {
   isQRModalOpen: boolean;
   isNavMenuOpen: boolean;
   
+  primaryColor: string;
+  
   // Actions
   setLocale: (l: Locale) => void;
   setTheme: (t: Theme) => void;
   setPreviewTheme: (t: Theme) => void;
   setCustomizationMode: (m: CustomizationMode) => void;
   setPreviewDevice: (d: 'desktop' | 'tablet' | 'mobile') => void;
+  setPrimaryColor: (c: string) => void;
   openQRModal: () => void;
   closeQRModal: () => void;
   toggleNavMenu: () => void;
@@ -31,6 +34,7 @@ export const useStudioStore = create<StudioState>()(
       previewTheme: 'light',
       customizationMode: 'default',
       previewDevice: 'desktop',
+      primaryColor: '#0ea5e9',
       isQRModalOpen: false,
       isNavMenuOpen: false,
       
@@ -39,6 +43,7 @@ export const useStudioStore = create<StudioState>()(
       setPreviewTheme: (t) => set({ previewTheme: t }),
       setCustomizationMode: (m) => set({ customizationMode: m }),
       setPreviewDevice: (d) => set({ previewDevice: d }),
+      setPrimaryColor: (c) => set({ primaryColor: c }),
       openQRModal: () => set({ isQRModalOpen: true }),
       closeQRModal: () => set({ isQRModalOpen: false }),
       toggleNavMenu: () => set((s) => ({ isNavMenuOpen: !s.isNavMenuOpen })),
